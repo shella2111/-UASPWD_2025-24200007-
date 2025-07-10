@@ -36,11 +36,10 @@ const server = http.createServer((req, res) => {
       res.end(content);
     });
 
-  }else if(req.method === 'POST' && req.url === '/daftar'){
+  }else if(req.method === 'POST' && req.url === '/order'){
     let body = '';
     req.on('data', chunk => body += chunk);
     req.on('end', () => {
-      //proses di sini!
       const parsed = parse(body);
       const {name, email, item} = parsed;
       const sql = 'insert into formulir (name, email, item) values(?, ?)';
