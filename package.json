@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/shella2111/-UASPWD_2025-24200007-#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mysql": "^2.18.1"
   }
 }
